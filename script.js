@@ -9,4 +9,17 @@ var img = document.getElementById("image");
         range.addEventListener("mousemove",function(e){
             img.style.filter = prop +"(" + range.value + "%)";
         })
+        if(prop == "resize"){
+            document.getElementById("size").style.display = "block";
+        }
+        if(prop == "done"){
+            var formEl = document.forms.size;
+            var formData = new FormData(formEl);
+            var h = formData.get('height')+"px";
+            var w = formData.get('width')+"px";
+            console.log(w,h);
+            document.getElementById("image").width = w ;
+            document.getElementById("image").height = h ;
+            document.getElementById("size").style.display = "none";
+        }
     })
