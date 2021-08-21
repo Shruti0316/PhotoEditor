@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="upload" >
+        <input id="file" type="file" accept="image/*" name="image" style="display: none;" onchange="selectImage(this)">
+        <label id="label" for="file" style="cursor: pointer;"><soan>Select Image</soan></label>
+    </div>
+    <div class="container">
+        <img id="image" src="">
+        <div class="sidebar">
+                <div class="sidebar-item" id="brightness">
+                    Brightness
+                </div>
+                <div class="sidebar-item" id="contrast">
+                    Contrast
+                </div>
+                <div class="sidebar-item" id="saturation">
+                    Saturation
+                </div>
+                <div class="sidebar-item" id="grayscale">
+                    Grayscale
+                </div>
+                <div class="sidebar-item" id="sepia">
+                    Sepia
+                </div>
+                <div class="sidebar-item" id="blur">
+                    Blur
+                </div>
+                <div class="sidebar-item">
+                    Crop
+                </div>
+                <div class="sidebar-item">
+                    Resize
+                </div>
+                <div class="sidebar-item">
+                    Add Text
+                </div>
+        </div>
+        <div class="slider-container">
+            <input type="range" id="slider">
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
