@@ -87,6 +87,6 @@ form{
     padding: 15px;
     color: black;
 }
-#size{
+#size,#border,#rotate{
     display: none;
 }

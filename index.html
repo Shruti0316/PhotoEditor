@@ -13,7 +13,7 @@
         <label id="label" for="file" style="cursor: pointer;"><soan>Select Image</soan></label>
     </div>
     <div class="container">
-        <img id="image" src="">
+        <img id="image" src="" >
         <div class="sidebar">
                 <div class="sidebar-item" id="brightness">
                     Brightness
@@ -33,8 +33,14 @@
                 <div class="sidebar-item" id="blur">
                     Blur
                 </div>
-                <div class="sidebar-item" id="resize">
+                <!-- <div class="sidebar-item" id="resize">
                     Resize
+                </div> -->
+                <div class="sidebar-item" id="Aborder">
+                    Add Border
+                </div>
+                <div class="sidebar-item" id="rotator">
+                    Rotate
                 </div>
                 <div class="sidebar-item">
                     Crop
@@ -52,6 +58,18 @@
         <input class="data" type="number" name="height" placeholder="Height(px)"><br>
         <input class="data" type="number" name="width" placeholder="Width(px)"><br>
         <input type="button" value="DONE" class="btn" id="done">
+    </form>
+    <form id="border">
+        <div id="abt">Add Border</div> 
+        <input class="data" type="number" name="width" placeholder="Width(px)"><br>
+        <input class="data" type="text" name="shape" placeholder="Solid/Dashed/Dotted..."><br>
+        <input class="data" type="text" name="colour" placeholder="Color"><br>
+        <input type="button" value="DONE" class="btn" id="bdone">
+    </form>
+    <form id="rotate">
+        <div id="abt">Rotate</div> 
+        <input class="data" type="number" name="angle" placeholder="Angle(deg)"><br>
+        <input type="button" value="DONE" class="btn" id="rdone">
     </form>
 
 </body>
