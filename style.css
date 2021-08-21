@@ -28,8 +28,8 @@ label{
 }
 #image{
     grid-area: image;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
 }
 .sidebar{
     grid-area: sidebar;
@@ -60,4 +60,33 @@ label{
 #slider{
     width: 100%;
     cursor: pointer;
+}
+/* FORM */
+form{
+    background-color: rgb(241, 182, 202);
+    position: absolute;
+    padding: 35px;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+} 
+#abt{
+    font-size: 55px;
+    padding-bottom: 20px;
+    font-family: 'Concert One',cursive;
+    color: #ff304f;
+}
+.data{
+    margin: 20px;
+}
+.btn{
+    border: 0;
+    background-image: linear-gradient(to top right,#ff304f,#118df0 );
+    font-weight: bolder;
+    padding: 15px;
+    color: black;
+}
+#size{
+    display: none;
 }
