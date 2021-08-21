@@ -33,11 +33,11 @@
                 <div class="sidebar-item" id="blur">
                     Blur
                 </div>
-                <div class="sidebar-item">
-                    Crop
+                <div class="sidebar-item" id="resize">
+                    Resize
                 </div>
                 <div class="sidebar-item">
-                    Resize
+                    Crop
                 </div>
                 <div class="sidebar-item">
                     Add Text
@@ -47,6 +47,12 @@
             <input type="range" id="slider">
         </div>
     </div>
+    <form id="size">
+        <div id="abt">New Dimensions</div> 
+        <input class="data" type="number" name="height" placeholder="Height(px)"><br>
+        <input class="data" type="number" name="width" placeholder="Width(px)"><br>
+        <input type="button" value="DONE" class="btn" id="done">
+    </form>
 
 </body>
 <script src="script.js"></script>
