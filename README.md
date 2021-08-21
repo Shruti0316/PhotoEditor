@@ -8,3 +8,6 @@
     - Grayscale
     - Sepia
     - Blur
+    - Apply borders
+    - Rotate
+    - Resize
